@@ -1,9 +1,9 @@
 # 校园商铺项目小点
 
-# 创建maven项目后出现报错，The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
+## 1、创建maven项目后出现报错，The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
 右键项目属性，进入Java Build Path --> Libraries --> Add Library --> Server Runtime --> Tomcat，finish完成
 
-# 跟着老师敲的时候，在tb_area表单创建时出现问题
+## 2、跟着老师敲的时候，在tb_area表单创建时出现问题
 经试验，去掉字段名的单引号即可，如下
 ```
 USE o2o;
