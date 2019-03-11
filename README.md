@@ -18,4 +18,4 @@ CREATE TABLE tb_area(
 ) ENGINE=INNODB auto_increment=1 DEFAULT CHARSET=utf8;
 ```
 
-# 
+# 3、若修改了web.xml,则必须保存后重启服务器才会生效
