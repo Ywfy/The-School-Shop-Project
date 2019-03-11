@@ -18,4 +18,18 @@ CREATE TABLE tb_area(
 ) ENGINE=INNODB auto_increment=1 DEFAULT CHARSET=utf8;
 ```
 
-# 3、若修改了web.xml,则必须保存后重启服务器才会生效
+## 3、若修改了web.xml,则必须保存后重启服务器才会生效
+
+## 4、ajax前端上传FormData，后台获取时全是null
+```
+忘记了配置文件上传解析器，记得在spring-web中配置
+	<!-- 文件上传解析器 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="utf-8"></property>
+		<property name="maxUploadSize" value="10485760000"></property><!-- 最大上传文件大小 -->
+		<property name="maxInMemorySize" value="10960"></property>
+	</bean>
+```
+并且记得要添加commons-Fileupload.jar包依赖
+
