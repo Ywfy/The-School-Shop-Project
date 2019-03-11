@@ -31,5 +31,5 @@ CREATE TABLE tb_area(
 		<property name="maxInMemorySize" value="10960"></property>
 	</bean>
 ```
-并且记得要添加commons-Fileupload.jar包依赖
+并且记得要添加commons-fileupload.jar包依赖
 
